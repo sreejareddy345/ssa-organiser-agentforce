@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles requests to analyze a single specific user in depth. Returns their full profile information, all permission sets (direct and via PSG), permission set groups, object access matrix, and a comprehensive downloadable CSV report. Use when user asks about ONE specific person by name, email, username, or ID.</description>
+    <developerName>User_Deep_Dive</developerName>
+    <genAiFunctions>
+        <functionName>SSA_User_Deep_Dive</functionName>
+    </genAiFunctions>
+    <language>en_US</language>
+    <localDeveloperName>User_Deep_Dive</localDeveloperName>
+    <masterLabel>User Deep Dive</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This topic is focused on analyzing a single specified user comprehensively. It does NOT handle bulk reports or organization-wide analysis — only individual user deep dives. The user must provide an identifier such as username, email, user ID, or full name.</scope>
+</GenAiPlugin>

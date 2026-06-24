@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>sevQyY64AHfyXW15gJj+ejyY4RJAXpPvW0xODNifNtk=_8</activeVersionIdentifier>
+    <developerName>Security_Ana_oly_AI_analysis</developerName>
+    <masterLabel>Security Anamoly AI analysis</masterLabel>
+    <overridable>false</overridable>
+    <relatedEntity>Security_Anomaly__c</relatedEntity>
+    <relatedField>Security_Anomaly__c.AI_Analysis__c</relatedField>
+    <templateVersions>
+        <content>You are a cybersecurity analyst assistant. Analyze the following security 
+anomaly detected in our Salesforce org and provide a concise risk assessment.
+
+ANOMALY DETAILS:
+- Anomaly Number: {!$Input:Security_Anomaly__c.Name}
+- Anomaly Type: {!$Input:Security_Anomaly__c.Anomaly_Type__c}
+- Severity: {!$Input:Security_Anomaly__c.Severity__c}
+- Status:  {!$Input:Security_Anomaly__c.Status__c}
+- Detected Date/Time:  {!$Input:Security_Anomaly__c.Detected_Date_Time__c}
+- Performed By:  {!$Input:Security_Anomaly__c.Performed_By__r.Name}
+- Old Value:  {!$Input:Security_Anomaly__c.Old_Value__c}
+- New Value: {!$Input:Security_Anomaly__c.New_Value__c}
+Provide a brief analysis in 5-6 lines maximum covering:
+What happened (1 line)
+Risk level &amp; why ? (1-2 lines)
+Business impact (1 line)
+Top 2 recommended actions (1-2 lines)
+
+Keep it plain text, professional, and under 100 words. 
+No HTML tags, no headers, no bullet formatting. 
+
+
+
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Security_Anomaly__c</definition>
+            <referenceName>Input:Security_Anomaly__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Published</status>
+        <templateFormat>FormulaExpression</templateFormat>
+        <versionIdentifier>sevQyY64AHfyXW15gJj+ejyY4RJAXpPvW0xODNifNtk=_8</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are a cybersecurity analyst assistant. Analyze the following security 
+anomaly detected in our Salesforce org and provide a concise risk assessment.
+
+ANOMALY DETAILS:
+- Anomaly Number: {!$Input:Security_Anomaly__c.Name}
+- Anomaly Type: {!$Input:Security_Anomaly__c.Anomaly_Type__c}
+- Severity: {!$Input:Security_Anomaly__c.Severity__c}
+- Status:  {!$Input:Security_Anomaly__c.Status__c}
+- Detected Date/Time:  {!$Input:Security_Anomaly__c.Detected_Date_Time__c}
+- Performed By:  {!$Input:Security_Anomaly__c.Performed_By__r.Name}
+- Old Value:  {!$Input:Security_Anomaly__c.Old_Value__c}
+- New Value: {!$Input:Security_Anomaly__c.New_Value__c}
+Provide a brief analysis in 5-6 lines maximum covering:
+- What happened (1 line)
+- Risk level &amp; why (1-2 lines)
+- Business impact (1 line)
+- Top 2 recommended actions (1-2 lines)
+
+Keep it plain text, professional, and under 100 words. 
+
+
+
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Security_Anomaly__c</definition>
+            <referenceName>Input:Security_Anomaly__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Published</status>
+        <templateFormat>FormulaExpression</templateFormat>
+        <versionIdentifier>sevQyY64AHfyXW15gJj+ejyY4RJAXpPvW0xODNifNtk=_7</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

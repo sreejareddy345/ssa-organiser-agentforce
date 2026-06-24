@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles all questions about Segregation of Duties (SOD), permission 
+conflicts between Salesforce objects, user access audits, compliance risk 
+analysis, and identifying users who hold conflicting permissions on two 
+Salesforce objects. It also handles downloading SOD violation reports as CSV 
+files.
+
+Route to this topic when the user mentions:
+- SOD, Segregation of Duties, separation of duties
+- Permission conflicts, conflicting access, risky access
+- User audit, access audit, compliance audit, security audit
+- Comparing permissions between two objects
+- Finding users with specific permissions (Create/Edit/Delete/ModifyAll)
+- Downloading or exporting SOD reports
+- Checking who has access to two specific objects</description>
+    <developerName>SOD_Compliance_Analysis</developerName>
+    <genAiFunctions>
+        <functionName>Export_SOD_Report_to_CSV</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Run_SOD_Analysis</functionName>
+    </genAiFunctions>
+    <language>en_US</language>
+    <localDeveloperName>SOD_Compliance_Analysis</localDeveloperName>
+    <masterLabel>SOD Compliance Analysis</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is ONLY to help audit, compliance, and security teams analyze SOD 
+violations between two Salesforce objects and provide downloadable CSV reports.
+
+Only respond to queries related to:
+- Running SOD analysis between two objects
+- Interpreting SOD violation results and counts
+- Downloading SOD reports as CSV files
+- Explaining what SOD violations mean
+- Clarifying object API names for SOD analysis
+
+Do NOT answer questions about:
+- General Salesforce configuration unrelated to permissions
+- User creation, deletion, or profile modifications
+- Data modifications or record changes
+- Reports unrelated to SOD
+- Any topic outside SOD compliance</scope>
+</GenAiPlugin>

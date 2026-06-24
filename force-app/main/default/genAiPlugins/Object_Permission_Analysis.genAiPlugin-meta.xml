@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Object level CRUD permissions including who can Create Read Update Delete View All and Modify All records on any Salesforce object.Covers both profiles and permission sets.</description>
+    <developerName>Object_Permission_Analysis</developerName>
+    <genAiFunctions>
+        <functionName>SSA_Object_Permissions</functionName>
+    </genAiFunctions>
+    <language>en_US</language>
+    <localDeveloperName>Object_Permission_Analysis</localDeveloperName>
+    <masterLabel>Object Permission Analysis</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to fetch Object level CRUD permissions including who can Create Read Update Delete View All and Modify All records on any Salesforce object (Covers both profiles and permission sets)</scope>
+</GenAiPlugin>

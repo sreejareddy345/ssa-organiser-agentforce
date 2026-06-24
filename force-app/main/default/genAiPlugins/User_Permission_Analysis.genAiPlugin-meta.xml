@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic covers finding actual users who have specific  object permissions. It shows user names, usernames, emails,  profiles, roles, last login dates and how they got their access through profiles and permission sets.</description>
+    <developerName>User_Permission_Analysis</developerName>
+    <genAiFunctions>
+        <functionName>SSA_Users_With_Object_Permissions</functionName>
+    </genAiFunctions>
+    <language>en_US</language>
+    <localDeveloperName>User_Permission_Analysis</localDeveloperName>
+    <masterLabel>User Permission Analysis</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>your job is to give the output of the actual users who have specific  object permissions. It shows user names, usernames, emails,  profiles, roles, last login dates and how they got their access through profiles and permission sets.</scope>
+</GenAiPlugin>

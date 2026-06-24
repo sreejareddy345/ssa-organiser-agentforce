@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles requests to export, download, or save permission analysis data as CSV files. This includes object permissions (CRUD access matrix), user permissions (who has access to what), and field permissions (field-level security). The output is a downloadable CSV file with a direct URL the user can click.</description>
+    <developerName>Permission_Export0</developerName>
+    <genAiFunctions>
+        <functionName>Export_SSA_Report_to_CSV</functionName>
+    </genAiFunctions>
+    <language>en_US</language>
+    <localDeveloperName>Permission_Export0</localDeveloperName>
+    <masterLabel>Permission Export</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This topic is responsible for generating downloadable CSV exports of permission data from Salesforce. It produces files that can be opened in Excel for detailed analysis. It does NOT handle analysis or reports shown inline in chat — only file exports.</scope>
+</GenAiPlugin>

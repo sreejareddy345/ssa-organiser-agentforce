@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles exporting permission analysis data  as CSV files that can be downloaded and opened in Excel.</description>
+    <developerName>Permission_Export</developerName>
+    <genAiFunctions>
+        <functionName>SSA_Export_Report</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>When the user asks to export or download permissions, use the SSA Export Report action.
+
+For reportType:
+If the user asks about object permissions or CRED access or who has create read edit delete at profile or permission set level, use object_permissions.
+If the user asks about user permissions or which users have access or user level report or people with access, use user_permissions.
+If the user asks about field permissions or field level security or which fields are visible or field access, use field_permissions.
+If the user does not specify, default to object_permissions.
+
+For objectName:
+If the user mentions a specific object like Account, Contact, Opportunity, Case, Lead, Task, Event, Campaign, Order, Product2, Contract, User, or any custom object ending in __c, use that object name. If the user says all objects or does not mention a specific object, use all.
+
+For referenceType:
+If the user says profiles only, use Profile. If the user says permission sets only, use Permission Set. Otherwise use all.
+
+For saveAsFile:
+Always set to true so the file is saved and downloadable.
+
+For fileName:
+Create a descriptive name based on what the user asked. Use underscores instead of spaces. Do not use special characters. Examples:
+Export Account object permissions becomes Account_Object_Permissions.
+Export all user permissions becomes All_User_Permissions.
+Export Contact field permissions becomes Contact_Field_Permissions.
+Export all permissions becomes All_Object_Permissions.
+
+For includeInternal:
+Default to false to show only admin created profiles, permission sets, and permission set groups. Only set to true if the user explicitly says include internal or include Salesforce internal or show everything including system permissions.</description>
+        <developerName>instruction_0_1776878134495</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0_1776878134495</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>Permission_Export</localDeveloperName>
+    <masterLabel>Permission Export</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to handle exporting permission analysis data  as CSV files that can be downloaded and opened in Excel.</scope>
+</GenAiPlugin>

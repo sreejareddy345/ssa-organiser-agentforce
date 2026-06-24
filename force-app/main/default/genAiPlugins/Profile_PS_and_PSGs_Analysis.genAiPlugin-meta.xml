@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles user requests to analyze profiles, permission sets, and permission set groups in the org. Provides summary statistics (counts of used/unused), lists of items with and without users, and generates a downloadable CSV file containing every individual user&apos;s details including their profile, active status, last login, and permission source (direct assignment or via permission set group)</description>
+    <developerName>Profile_PS_and_PSGs_Analysis</developerName>
+    <genAiFunctions>
+        <functionName>SSA_Profile_and_PermSet_Analysis_New</functionName>
+    </genAiFunctions>
+    <language>en_US</language>
+    <localDeveloperName>Profile_PS_and_PSGs_Analysis</localDeveloperName>
+    <masterLabel>Profile PS and PSGs Analysis</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This topic analyzes the relationships between users, profiles, permission sets (PS), and permission set groups (PSG). It identifies unused profiles/PSs/PSGs, counts active vs inactive users, and distinguishes between direct permission set assignments and those inherited via PSG membership. Produces both summary insights displayed in chat AND a downloadable CSV with per-user details.</scope>
+</GenAiPlugin>

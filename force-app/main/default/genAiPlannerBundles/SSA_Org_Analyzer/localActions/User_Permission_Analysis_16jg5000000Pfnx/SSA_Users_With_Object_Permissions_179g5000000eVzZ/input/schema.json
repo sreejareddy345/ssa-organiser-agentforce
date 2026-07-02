@@ -1,0 +1,35 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "activeOnly" : {
+      "title" : "Active Only",
+      "description" : "Set to true to show only active users. Set to false to \ninclude inactive users too. Default is true.",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "credFilter" : {
+      "title" : "CRED Filter",
+      "description" : "Filter by access level. Use full_access to show only \nusers with Create plus Read plus Edit plus Delete. Use \nmodify_all to show users with Modify All Records. Use \ndelete to show users with Delete access. Use all to show \nall users with any access.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "objectName" : {
+      "title" : "Object Name",
+      "description" : "The Salesforce object API name to analyze. Can be any \nstandard object like Account, Contact, Opportunity, Case, \nLead, Task, Event, Campaign, Order, Product2, Contract, \nUser, or any custom object ending in __c",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "profileFilter" : {
+      "title" : "Profile Filter",
+      "description" : "Filter results to show only users with a specific profile. \nUse the profile name like System Administrator or Standard \nUser or Sales Manager. Use all to show users from all profiles",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

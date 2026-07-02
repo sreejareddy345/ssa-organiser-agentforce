@@ -1,0 +1,22 @@
+{
+  "required" : [ "analysisType" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "analysisType" : {
+      "title" : "Analysis Type",
+      "description" : "user_profiles, user_permsets, user_psgs, or all",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "nameFilter" : {
+      "title" : "Name Filter",
+      "description" : "Specific name to search or all",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

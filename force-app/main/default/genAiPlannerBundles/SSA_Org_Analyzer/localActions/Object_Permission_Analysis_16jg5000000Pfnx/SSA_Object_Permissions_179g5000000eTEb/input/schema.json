@@ -1,0 +1,28 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "crudFilter" : {
+      "title" : "CRUD Filter",
+      "description" : "Specifies which CRUD level to filter by. Use full_access to show only profiles and permission sets with Create plus Read plus Update plus Delete. Use modify_all to show only those with Modify All Records. Use delete to show only those with Delete access. Use all to show everything with no filter.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "objectName" : {
+      "title" : "Object Name",
+      "description" : "The Salesforce object API name to analyze. For example Account or Contact or Opportunity or Case or Lead. Use all to analyze every object in the org. This is the main object being analyzed for CRUD permissions.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "referenceType" : {
+      "title" : "Reference Type",
+      "description" : "Profile or Permission Set or all",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

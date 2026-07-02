@@ -1,0 +1,43 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "fullCrudCount" : {
+      "title" : "Full CRUD Count",
+      "description" : "he number of profiles and permission sets that have full Create Read Update Delete access on the specified object.",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "modifyAllCount" : {
+      "title" : "Modify All Count",
+      "description" : "The number of profiles and permission sets that have Modify All Records permission on the specified object.",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "reportResult" : {
+      "title" : "Report Result",
+      "description" : "The full detailed report showing every profile and permission set with their CRUD access matrix for the specified object. Shows Create Read Update Delete View All and Modify All for each entry.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "totalEntries" : {
+      "title" : "Total Entries",
+      "description" : "The total number of object permission entries found matching the filters",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

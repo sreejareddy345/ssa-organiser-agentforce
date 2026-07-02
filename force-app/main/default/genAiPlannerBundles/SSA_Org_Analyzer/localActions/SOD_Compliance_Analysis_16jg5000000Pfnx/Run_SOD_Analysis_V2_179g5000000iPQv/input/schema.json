@@ -1,0 +1,36 @@
+{
+  "required" : [ "leftObject", "rightObject" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "leftObject" : {
+      "title" : "Left Object API Name",
+      "description" : "API name of the first object to analyze (e.g., Pricebook2)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "leftPermissions" : {
+      "title" : "Left Permissions",
+      "description" : "Comma-separated: Create,Edit,Delete,ModifyAll. Defaults to all four.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "rightObject" : {
+      "title" : "Right Object API Name",
+      "description" : "API name of the second object to analyze (e.g., Account)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "rightPermissions" : {
+      "title" : "Right Permissions",
+      "description" : "Comma-separated: Create,Edit,Delete,ModifyAll. Defaults to all four.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

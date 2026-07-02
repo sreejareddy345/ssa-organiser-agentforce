@@ -1,0 +1,36 @@
+{
+  "required" : [ "leftObject", "rightObject" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "leftObject" : {
+      "title" : "Left Object API Name",
+      "description" : "The API name of the left object from the PREVIOUS \"Run SOD Analysis\" call. Do NOT ask the user for this — reuse the exact value returned by the analysis action. This ensures the CSV matches the analysis the user saw.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "leftPermissions" : {
+      "title" : "Left Permissions",
+      "description" : "The permissions used on the left object in the previous analysis. Reuse the exact value from the analysis output. If blank in analysis, leave blank here.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "rightObject" : {
+      "title" : "Right Object API Name",
+      "description" : "The API name of the right object from the PREVIOUS \"Run SOD Analysis\" call. Do NOT ask the user for this — reuse the exact value returned by the analysis action",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "rightPermissions" : {
+      "title" : "Right Permissions",
+      "description" : "The permissions used on the right object in the previous analysis. Reuse the exact value from the analysis output.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

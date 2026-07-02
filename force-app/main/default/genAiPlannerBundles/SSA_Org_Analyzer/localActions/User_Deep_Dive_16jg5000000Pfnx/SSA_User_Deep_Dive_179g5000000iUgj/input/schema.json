@@ -1,0 +1,15 @@
+{
+  "required" : [ "userIdentifier" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "userIdentifier" : {
+      "title" : "User Identifier",
+      "description" : "User ID (005...), Username, Email, or Full Name to look up",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

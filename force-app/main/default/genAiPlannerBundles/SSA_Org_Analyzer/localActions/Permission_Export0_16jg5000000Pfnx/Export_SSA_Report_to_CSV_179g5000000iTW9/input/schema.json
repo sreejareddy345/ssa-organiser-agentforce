@@ -1,0 +1,36 @@
+{
+  "required" : [ "objectName", "reportType" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "includeInternal" : {
+      "title" : "Include Internal",
+      "description" : "Include Salesforce internal permission sets. Default false.",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "objectName" : {
+      "title" : "Object Name",
+      "description" : "Object API name or all",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "referenceType" : {
+      "title" : "Reference Type",
+      "description" : "Profile, Permission Set, or all",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "reportType" : {
+      "title" : "Report Type",
+      "description" : "object_permissions, user_permissions, or field_permissions",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}
